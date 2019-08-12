@@ -18,6 +18,8 @@
         <module name="hystrix-dashboard" />
         <module name="RegisterCenter" />
         <module name="stream-hello" />
+        <module name="trace-1" />
+        <module name="trace-2" />
         <module name="turbine" />
       </profile>
     </annotationProcessing>
@@ -36,6 +38,8 @@
       <module name="eureka-consumer" options="" />
       <module name="hystrix-dashboard" options="" />
       <module name="stream-hello" options="" />
+      <module name="trace-1" options="" />
+      <module name="trace-2" options="" />
       <module name="turbine" options="" />
     </option>
   </component>
