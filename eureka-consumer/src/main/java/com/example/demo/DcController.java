@@ -14,16 +14,12 @@ public class DcController {
     @Autowired
     RestTemplate restTemplate;
 
-//    @GetMapping("/consumer")
-//    public String dc() {
-//        ServiceInstance serviceInstance = loadBalancerClient.choose("eureka-client");
-//        String url = "http://" + serviceInstance.getHost() + ":" + serviceInstance.getPort() + "/dc";
-//        System.out.println(url);
-//        return restTemplate.getForObject(url, String.class);
-//    }
+    @Autowired
+    ConsumerService consumerService;
+
     @GetMapping("/consumer")
     public String dc() {
-        return restTemplate.getForObject("http://eureka-client/dc", String.class);
+        return consumerService.consumer();
     }
 
 }

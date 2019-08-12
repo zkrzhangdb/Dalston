@@ -6,10 +6,17 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="config-client" />
+        <module name="config-server-git" />
         <module name="Dalston" />
+        <module name="demo (1)" />
+        <module name="demo (2)" />
+        <module name="demo (3)" />
         <module name="eureka-client" />
         <module name="eureka-consumer" />
+        <module name="hystrix-dashboard" />
         <module name="RegisterCenter" />
+        <module name="turbine" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -19,9 +26,13 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="RegisterCenter" options="" />
+      <module name="config-client" options="" />
+      <module name="config-server-git" options="" />
       <module name="eureka-client" options="" />
       <module name="eureka-consume" options="-parameters" />
       <module name="eureka-consumer" options="" />
+      <module name="hystrix-dashboard" options="" />
+      <module name="turbine" options="" />
     </option>
   </component>
 </project>
