@@ -20,7 +20,7 @@ public class DcController {
 
     @RequestMapping(value = "/trace-1", method = RequestMethod.GET)
     public String trace() {
-        logger.info("===call trace-1===");
+        System.out.println("===call trace-1===");
         return restTemplate.getForEntity("http://trace-2/trace-2", String.class).getBody();
     }
 

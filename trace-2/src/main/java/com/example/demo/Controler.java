@@ -11,7 +11,7 @@ public class Controler {
 
     @RequestMapping(value = "/trace-2", method = RequestMethod.GET)
     public String trace() {
-        logger.info("===<call trace-2>===");
-        return "Trace";
+        System.out.println("===<call trace-2>===");
+        return "Trace   Test";
     }
 }
